@@ -3,6 +3,7 @@
     --morado: #6f05ec;
     --negro: #22262b;
     --grid-claro: #787879;
+    --grid-mas-claro: #d4d4d4;
     --nombre-persona: #0e0f13;
     --gris-oscuro: #26272e;
 }
@@ -34,7 +35,7 @@ body {
     grid-row: 1/2;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 1.5rem 0;
 
 
@@ -222,11 +223,72 @@ body {
 }
 
 .footer {
-
-    background-color: rgb(153, 153, 22);
+    background-color: var(--grid-mas-claro);
     grid-column: 1/5;
     grid-row: 5/6;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    gap: 2rem;
+    border-radius: 20px;
 }
+
+.footer-contenido {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.footer-links,
+.footer-contacto {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.footer-links ul,
+.footer-contacto ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.footer-links ul li {}
+
+.footer-links ul li a,
+.footer-contacto ul li a {
+    display: flex;
+    gap: .5rem;
+    text-decoration: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-links ul li a i,
+.footer-contacto i {
+
+    font-size: 1rem;
+}
+
+.footer-contacto {}
 
 span {
     color: var(--morado);
@@ -238,7 +300,7 @@ span {
     .header {
         gap: 1rem;
         padding: 1rem;
-        align-items: flex-start;
+
     }
 
     .header-menu ul {
@@ -253,7 +315,7 @@ span {
 
     .foto-personal {
 
-        max-width: 80%;
+        max-width: 75%;
 
     }
 
@@ -261,7 +323,10 @@ span {
 
         flex-direction: column;
         gap: 0;
-    }.button-show-skills, .button-show-projects{
+    }
+
+    .button-show-skills,
+    .button-show-projects {
 
         padding: .5rem;
     }
