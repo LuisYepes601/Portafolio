@@ -163,6 +163,7 @@ body {
 
 .foto-personal {
     width: 300px;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
 
@@ -232,7 +233,7 @@ span {
 }
 
 
-@media(max-width: 380px ){
+@media(max-width: 380px) {
 
     .header {
         gap: 1rem;
@@ -245,10 +246,24 @@ span {
         gap: .5rem;
     }
 
+    .contenido-principal-home-foto {
+
+        justify-content: center;
+    }
+
+    .foto-personal {
+
+        max-width: 80%;
+
+    }
+
     .contenido-principal-home-botones {
 
         flex-direction: column;
         gap: 0;
+    }.button-show-skills, .button-show-projects{
+
+        padding: .5rem;
     }
 }
 
@@ -265,4 +280,11 @@ span {
         flex-direction: column-reverse;
         gap: 4rem;
     }
+
+    .contenido-principal-home-botones {
+        flex-direction: column;
+        gap: 0;
+    }
+
+
 }
