@@ -64,7 +64,7 @@ body {
 
     font-weight: 700;
     color: var(--morado);
-    font-size: clamp(.5rem, 4vw, 1.5rem);
+    font-size: clamp(.9rem, 4vw, 1.5rem);
 }
 
 .header-menu ul {
@@ -73,7 +73,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    font-size: clamp(.5rem, 4vw, 1.5rem);
+    font-size: clamp(.9rem, 4vw, 1.5rem);
 
 
 }
@@ -105,9 +105,11 @@ body {
 
     grid-column: 1/5;
     grid-row: 2/5;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 4rem;
 
 }
 
@@ -117,6 +119,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -221,6 +224,101 @@ body {
     background-color: var(--gris-oscuro);
 
 }
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.skills-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+
+
+}
+
+.skills-contenido-titulo {
+
+    font-size: clamp(1.8rem, 5vw, 5rem);
+    font-weight: bold;
+    font-weight: 800;
+    color: var(--morado);
+    background-color: var(--grid-mas-claro);
+    text-align: center;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.skills-contenido-secciones {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+
+
+}
+
+.front-end,
+.soft-skills {
+
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.front-end ul,
+.soft-skills ul,
+.back-end ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+.front-end ul li i,
+.soft-skills ul li i {
+
+    font-size: clamp(4rem, 10vw, 10rem);
+    color: var(--grid-claro);
+}
+
+.back-end {
+
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--grid-mas-claro);
+    border-radius: 25px;
+    padding: 2rem 0;
+}
+
+.back-end i {
+
+    font-size: clamp(4rem, 10vw, 10rem);
+    color: var(--morado);
+
+}
+
+
 
 .footer {
     background-color: var(--grid-mas-claro);
@@ -336,7 +434,7 @@ span {
 
     body {
 
-        padding: 2rem; 
+        padding: 2rem;
 
     }
 
