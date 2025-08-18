@@ -288,7 +288,7 @@ body {
     list-style: none;
     justify-content: space-evenly;
     width: 100%;
-    
+
 }
 
 .front-end ul li i,
@@ -296,6 +296,21 @@ body {
 
     font-size: clamp(4rem, 10vw, 10rem);
     color: var(--grid-claro);
+
+    transition: color .5s, transform 1s;
+    cursor: pointer;
+}
+
+.front-end ul li i:hover {
+
+    transform: scale(1.1);
+    color: var(--morado);
+
+}
+
+.soft-skills ul li i:hover {
+    transform: scale(1.1);
+    color: var(--morado);
 }
 
 .back-end {
@@ -315,7 +330,14 @@ body {
 
     font-size: clamp(4rem, 10vw, 10rem);
     color: var(--morado);
+    transition: color .5s, transform 1s;
 
+}
+
+.back-end i:hover {
+
+    transform: scale(1.1);
+    color: var(--grid-claro);
 }
 
 
