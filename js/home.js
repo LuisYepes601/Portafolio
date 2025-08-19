@@ -24,3 +24,28 @@ function mostrarSkills() {
 }
 
 document.addEventListener("DOMContentLoaded", mostrarSkills());
+
+
+function goProyectos() {
+
+    const btn_mis_proyectos = document.querySelector(".button-show-projects");
+
+    btn_mis_proyectos.addEventListener("click", () => {
+
+        window.location.href = "proyectos.html";
+    })
+
+    const ver_mis_proyectos = document.querySelector(".seccion-proyectos");
+    if (ver_mis_proyectos) {
+
+        ver_mis_proyectos.addEventListener("click", (e) => {
+
+            e.preventDefault();
+            window.location.href = "proyectos.html";
+        })
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", goProyectos());
+

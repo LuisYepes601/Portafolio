@@ -18,6 +18,9 @@ function mostrarSkills() {
 
     const btn_skills = document.querySelector(".button-show-skills");
 
+    console.log(btn_skills);
+
+
     btn_skills.addEventListener("click", () => {
 
         window.location.href = "#skills";

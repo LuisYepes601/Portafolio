@@ -546,16 +546,16 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .mi-proposito h2 {
-    font-size: clamp(1.2rem, 6vw, 5rem);
+    font-size: clamp(1.2rem, 4vw, 4rem);
 
 }
 
 .mi-proposito p {
-    font-size: clamp(1rem, 4vw, 2.5rem);
+    font-size: clamp(1rem, 3vw, 2rem);
     color: var(--grid-claro);
     font-weight: 700;
 }
