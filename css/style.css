@@ -410,6 +410,86 @@ body {
 
 .footer-contacto {}
 
+
+/**********SECCCION SOBRE MI***************/
+
+.estudios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estudios-info {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+
+}
+
+.estudios-info-tarjeta {
+
+    background-color: var(--grid-mas-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+   
+
+}
+
+.name-ins {
+
+    font-size: clamp(.5rem, 2vw, 1.2rem);
+    color: var(--nombre-persona);
+    font-weight: 800;
+}
+
+.estudios-info-tarjeta-logo {
+    min-height: 100px;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    /* siempre cuadrada, pero responsiva */
+    object-fit: cover;
+    /* recorta proporcionalmente */
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.fecha-estudios {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fecha-estudios input {
+    padding: .6rem;
+    border-radius: 5px;
+    width: 100%;
+    outline-style: none;
+    transition: border 1s;
+
+}
+
+.fecha-estudios input:hover {
+    border: 1px solid blue;
+    object-fit: contain;
+}
+
+.fecha-estudios p {
+    color: var(--nombre-persona);
+    font-weight: 600;
+
+}
+
 span {
     color: var(--morado);
 }
