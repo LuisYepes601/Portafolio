@@ -13,6 +13,8 @@
     padding: 0;
     margin: 0;
     font-family: roboto;
+    scroll-behavior: smooth;
+
 }
 
 .contenedor-grid {
@@ -413,20 +415,42 @@ body {
 
 /**********SECCCION SOBRE MI***************/
 
+.contenido-principal-home-info-descripcion-about {
+
+    color: var(--grid-claro);
+    font-weight: 500;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+
+}
+
 .estudios {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
+}
+
+.estudios h2 {
+
+    background-color: var(--grid-claro);
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
 }
 
 .estudios-info {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: stretch;
     gap: 2rem;
-    width: 100%;
+    margin: 1rem;
+
 
 }
 
@@ -435,15 +459,28 @@ body {
     background-color: var(--grid-mas-claro);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 300px;
+    max-width: 100%;
     gap: 2rem;
     padding: 2rem;
-   
+    border-radius: 20px;
+    text-align: center;
+    transition: transform .7s;
+
+
 
 }
 
-.name-ins {
+.estudios-info-tarjeta:hover {
+
+    transform: scale(1.05);
+}
+
+.estudios-info-tarjeta h4 {}
+
+.name-inst {
 
     font-size: clamp(.5rem, 2vw, 1.2rem);
     color: var(--nombre-persona);
@@ -468,21 +505,29 @@ body {
     gap: 1rem;
     justify-content: center;
     align-items: flex-start;
+    width: 100%;
 }
 
 .fecha-estudios input {
     padding: .6rem;
     border-radius: 5px;
     width: 100%;
-    outline-style: none;
-    transition: border 1s;
 
 }
 
-.fecha-estudios input:hover {
-    border: 1px solid blue;
-    object-fit: contain;
+.titulo-obtenido {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: none;
+    width: 100%;
+    text-align: center;
+    padding-top: .7rem;
+
 }
+
+
 
 .fecha-estudios p {
     color: var(--nombre-persona);
