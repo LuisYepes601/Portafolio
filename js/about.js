@@ -29,3 +29,25 @@ function mostrarSkills() {
 }
 
 document.addEventListener("DOMContentLoaded", mostrarSkills());
+
+
+function goProyectos() {
+
+    const ver_mis_proyectos = document.querySelectorAll(".seccion-proyectos");
+    if (ver_mis_proyectos.length > -1) {
+
+        console.log(ver_mis_proyectos);
+
+        ver_mis_proyectos.forEach(btn => {
+
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.location.href = "proyectos.html";
+            })
+        });
+
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", goProyectos());

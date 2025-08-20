@@ -1,25 +1,46 @@
 
-const btn_sobre_mi = document.querySelector(".btn-sobre-mi");
-
-console.log(btn_sobre_mi);
 
 
-btn_sobre_mi.addEventListener("click", (e) => {
+function goAbout() {
 
-    e.preventDefault();
-    window.location.href = "about.html";
-})
+    const btn_sobre_mi = document.querySelectorAll(".btn-sobre-mi");
 
+
+    if (btn_sobre_mi.length > -1) {
+
+        btn_sobre_mi.forEach(btn_sobre_mi => {
+
+            btn_sobre_mi.addEventListener("click", (e) => {
+
+                e.preventDefault();
+                window.location.href = "about.html";
+
+            })
+        });
+
+    }
+
+
+
+}
+
+document.addEventListener("DOMContentLoaded", goAbout())
 
 function mostrarSkills() {
 
 
-    const btn_skills = document.querySelector(".button-show-skills");
+    const btn_skills = document.querySelectorAll(".button-show-skills");
 
-    btn_skills.addEventListener("click", () => {
+    if (btn_skills.length > -1) {
 
-        window.location.href = "#skills";
-    })
+        btn_skills.forEach(btn_skill => {
+            btn_skill.addEventListener("click", (e) => {
+
+                e.preventDefault();
+                window.location.href = "#skills";
+            })
+        });
+    }
 
 }
 
@@ -28,21 +49,19 @@ document.addEventListener("DOMContentLoaded", mostrarSkills());
 
 function goProyectos() {
 
-    const btn_mis_proyectos = document.querySelector(".button-show-projects");
+    const ver_mis_proyectos = document.querySelectorAll(".seccion-proyectos");
+    if (ver_mis_proyectos.length > -1) {
 
-    btn_mis_proyectos.addEventListener("click", () => {
+        console.log(ver_mis_proyectos);
 
-        window.location.href = "proyectos.html";
-    })
+        ver_mis_proyectos.forEach(btn => {
 
-    const ver_mis_proyectos = document.querySelector(".seccion-proyectos");
-    if (ver_mis_proyectos) {
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.location.href = "proyectos.html";
+            })
+        });
 
-        ver_mis_proyectos.addEventListener("click", (e) => {
-
-            e.preventDefault();
-            window.location.href = "proyectos.html";
-        })
     }
 }
 
