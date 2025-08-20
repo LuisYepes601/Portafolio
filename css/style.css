@@ -561,6 +561,107 @@ span {
 }
 
 
+/*SECCION MIS PROYECTOS*/
+
+.proyectos-contenido {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.proyectos-contenido-header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.proyectos-contenido-header h2 {
+
+    font-size: clamp(1.2rem, 5vw, 3rem);
+    color: var(--morado);
+
+
+}
+
+.proyectos-contenido-header p {
+
+    font-size: clamp(1rem, 2.5vw, 1.7rem);
+    color: var(--grid-claro);
+}
+
+.proyectos-contenido-cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 2rem;
+
+
+}
+
+.proyectos-contenido-card {
+    background-color: var(--grid-mas-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    max-width: 100%;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+
+
+}
+
+.proyectos-contenido-card img {
+
+    width: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    min-height: 100px;
+}
+
+.proyectos-contenido-card-descripcion {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .4rem;
+    flex-grow: 1;
+}
+
+.proyectos-contenido-card-btns {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+    width: 100%;
+
+}
+
+.proyectos-contenido-card-btns button {
+    padding: clamp(.5rem, 2vw, .9rem);
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--grid-claro);
+    color: white;
+
+}
+
 @media(max-width: 380px) {
 
     .header {
