@@ -614,7 +614,7 @@ span {
     justify-content: space-between;
     align-items: center;
     width: 400px;
-    max-width: 100%;
+    max-width: 90%;
     gap: 1rem;
     padding: 2rem;
     border-radius: 20px;
@@ -652,12 +652,46 @@ span {
 
 }
 
-.proyectos-contenido-card-btns button {
+
+.btn-repositorio-encriptador,
+.btn-repositorio-youtube-azul {
+
     padding: clamp(.5rem, 2vw, .9rem);
     width: 100%;
     border-radius: 15px;
     border: none;
     background-color: var(--grid-claro);
+    color: white;
+    transition: background-color .5s, color .5s, transform .7s;
+
+}
+
+.btn-repositorio-youtube-azul:hover,
+.btn-repositorio-encriptador:hover {
+
+    background-color: var(--morado);
+    color: white;
+    transform: scale(.95);
+
+}
+
+.btn-demo-youtube,
+.btn-demo-encriptador {
+
+    padding: clamp(.5rem, 2vw, .9rem);
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid var(--morado);
+    background-color: var(--grid-mas-claro);
+    transition: background-color .5s, color .5s, transform .7s;
+
+}
+
+.btn-demo-youtube:hover,
+.btn-demo-encriptador:hover {
+
+    background-color: var(--morado);
+    transform: scale(.95);
     color: white;
 
 }
