@@ -461,7 +461,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 250px;
     max-width: 100%;
     gap: 2rem;
     padding: 2rem;
@@ -478,18 +478,16 @@ body {
     transform: scale(1.05);
 }
 
-.estudios-info-tarjeta h4 {}
 
 .name-inst {
 
-    font-size: clamp(.5rem, 2vw, 1.2rem);
+    font-size: clamp(.9rem, 3vw, 1.2rem);
     color: var(--nombre-persona);
     font-weight: 800;
 }
 
 .estudios-info-tarjeta-logo {
-    min-height: 100px;
-    width: 200px;
+    width: 150px;
     aspect-ratio: 1 / 1;
     /* siempre cuadrada, pero responsiva */
     object-fit: cover;
@@ -497,6 +495,7 @@ body {
     border-radius: 10px;
     max-width: 100%;
 }
+
 
 .fecha-estudios {
 
@@ -550,14 +549,15 @@ span {
 }
 
 .mi-proposito h2 {
-    font-size: clamp(1.2rem, 4vw, 4rem);
+    font-size: clamp(2rem, 6vw, 3.5rem);
 
 }
 
 .mi-proposito p {
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1.2rem, 5vw, 2rem);
     color: var(--grid-claro);
     font-weight: 700;
+    text-align: start;
 }
 
 
