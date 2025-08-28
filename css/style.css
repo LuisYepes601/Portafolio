@@ -188,7 +188,7 @@ body {
     max-width: 80%;
     background-color: var(--gris-oscuro);
     color: white;
-    padding: 1rem;
+    padding: clamp(.5rem, 2vw, 1rem);
     border-radius: 20px;
     margin: 1rem 0;
     border: 1px var(--gris-oscuro) solid;
@@ -210,7 +210,7 @@ body {
     max-width: 80%;
     background-color: var(--morado);
     color: white;
-    padding: 1rem;
+    padding: clamp(.5rem, 2vw, 1rem);
     border-radius: 20px;
     margin: 1rem 0;
     border: 1px var(--morado) solid;
@@ -438,7 +438,7 @@ body {
     width: 100%;
     border-radius: 25px;
     text-align: center;
-    padding: 1rem 0;
+    padding: clamp(.5rem, 2vw, 1rem) 0;
     color: white;
 }
 
@@ -461,7 +461,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 250px;
+    width: 270px;
     max-width: 100%;
     gap: 2rem;
     padding: 2rem;
@@ -560,6 +560,14 @@ span {
     text-align: start;
 }
 
+@media (max-width: 768px) {
+    .mi-proposito {
+
+        padding: 0;
+        margin: 0;
+    }
+
+}
 
 /*SECCION MIS PROYECTOS*/
 
@@ -603,6 +611,7 @@ span {
     justify-content: space-around;
     align-items: stretch;
     gap: 2rem;
+    width: 100%;
 
 
 }
@@ -614,7 +623,7 @@ span {
     justify-content: space-between;
     align-items: center;
     width: 400px;
-    max-width: 90%;
+    max-width: 100%;
     gap: 1rem;
     padding: 2rem;
     border-radius: 20px;
