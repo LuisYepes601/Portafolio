@@ -168,7 +168,7 @@ body {
 }
 
 .foto-personal {
-    width: 300px;
+    width: 400px;
     max-width: 100%;
     height: auto;
     object-fit: contain;
@@ -709,14 +709,10 @@ span {
         gap: .5rem;
     }
 
-    .contenido-principal-home-foto {
-
-        justify-content: center;
-    }
 
     .foto-personal {
 
-        max-width: 75%;
+        max-width: 70%;
 
     }
 
@@ -745,6 +741,17 @@ span {
 
         flex-direction: column-reverse;
         gap: 4rem;
+    }
+
+    .contenido-principal-home-foto {
+
+        justify-content: center;
+    }
+
+    .foto-personal {
+
+        max-width: 85%;
+
     }
 
     .contenido-principal-home-botones {
