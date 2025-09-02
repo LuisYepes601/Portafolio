@@ -459,7 +459,6 @@ body {
     background-color: var(--grid-mas-claro);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     width: 270px;
     max-width: 100%;
@@ -468,6 +467,8 @@ body {
     border-radius: 20px;
     text-align: center;
     transition: transform .7s;
+    flex-grow: 1;
+
 
 
 
