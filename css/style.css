@@ -560,6 +560,24 @@ span {
     text-align: start;
 }
 
+.btn-certificados {
+    padding: clamp(.6rem, 2vw, 1rem);
+    background-color: var(--morado);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid var(--morado);
+
+    transition: transform .7s, background-color .5s;
+}
+
+.btn-certificados:hover {
+
+    transform: scale(.9);
+    background-color: var(--grid-mas-claro);
+    color: var(--morado);
+}
+
 @media (max-width: 768px) {
     .mi-proposito {
 
