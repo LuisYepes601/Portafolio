@@ -7,6 +7,7 @@
     --nombre-persona: #0e0f13;
     --gris-oscuro: #26272e;
     --logo-wpp: #25D366;
+    --blanco: white;
 }
 
 * {
@@ -23,6 +24,8 @@
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-rows: auto;
+    gap: 1rem;
+
 
 
 }
@@ -39,25 +42,22 @@ body {
     grid-row: 1/2;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 1.5rem 0;
+    align-items: center;
+    padding: .8rem;
     position: sticky;
+    top: 10px;
     z-index: 1000;
-    top: 0;
-
-
+    background-color: var(--morado);
+    transition: top .5s;
+    margin-bottom: .2rem;
 
 }
 
-.scrroled {
 
-    background: var(--morado);
-  
-}
 
 .nombre-persona {
 
-    color: var(--nombre-persona);
+    color: var(--blanco);
     font-weight: 600;
     display: flex;
     flex-direction: column-reverse;
@@ -67,17 +67,18 @@ body {
 }
 
 .nombre-persona span {
-    color: var(--morado);
+    color: var(--blanco);
 }
 
 .nombre-persona h4 {
     font-size: clamp(.3rem, 2vw, 1rem);
+    color: var(--blanco);
 }
 
 .profile-icon {
 
     font-weight: 700;
-    color: var(--morado);
+    color: var(--blanco);
     font-size: clamp(.9rem, 4vw, 1.5rem);
 }
 
@@ -104,13 +105,13 @@ body {
 
 
     text-decoration: none;
-    color: var(--grid-claro);
+    color: var(--blanco);
     font-weight: 700;
 
 }
 
 .home {
-    color: var(--morado);
+    color: var(--blanco);
     font-weight: 900;
 
 }
