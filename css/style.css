@@ -6,6 +6,7 @@
     --grid-mas-claro: #d4d4d4;
     --nombre-persona: #0e0f13;
     --gris-oscuro: #26272e;
+    --logo-wpp: #25D366;
 }
 
 * {
@@ -29,6 +30,7 @@
 body {
 
     padding: 2rem 5rem;
+    position: relative;
 }
 
 .header {
@@ -410,7 +412,41 @@ body {
     font-size: 1rem;
 }
 
-.footer-contacto {}
+/*WAPPSAPP FLOTANTE*/
+
+.wpp-flotante {
+
+    position: fixed;
+
+    top: 80%;
+    right: 2%;
+
+}
+
+.wpp-flotante-contenido {
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    color: var(--logo-wpp);
+
+}
+
+
+.wpp-flotante-contenido a {
+
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: var(--logo-wpp);
+    font-weight: 800;
+    transition: transform .7s, color .5s;
+}
+
+.wpp-flotante-contenido a:hover {
+
+    transform: scale(1.1);
+    color: var(--morado);
+}
 
 
 /**********SECCCION SOBRE MI***************/
