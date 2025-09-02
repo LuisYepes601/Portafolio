@@ -436,7 +436,7 @@ body {
 
 .wpp-flotante-contenido a {
 
-    font-size: clamp(2.5rem, 5vw, 3rem);
+    font-size: clamp(3rem, 5vw, 4rem);
     color: var(--logo-wpp);
     font-weight: 800;
     transition: transform .7s, color .5s;
