@@ -68,3 +68,19 @@ function goProyectos() {
 
 document.addEventListener("DOMContentLoaded", goProyectos());
 
+
+function AnimacionHeader() {
+    const header = document.querySelector(".header");
+console.log(header);
+
+
+window.addEventListener("scrollend", () => {
+    if (window.scrollY > 50) {
+        header.classList.add("scrroled");
+    } else {
+        header.classList.remove("scrroled");
+    }
+});
+}
+
+document.addEventListener("DOMContentLoaded", AnimacionHeader())
